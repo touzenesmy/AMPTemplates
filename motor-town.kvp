@@ -19,7 +19,7 @@ App.CommandLineArgs=run --name=motortown -p {{$ApplicationPort1}}:7777/tcp -p {{
 App.CommandLineParameterDelimiter=
 App.CommandLineParameterFormat=
 App.DisplayName=Motor Town
-App.ExecutableLinux=docker
+App.ExecutableLinux=App.ExecutableLinux=/usr/bin/docker
 App.ExecutableWin=
 App.ExitMethod=SIGTERM
 App.HasReadableConsole=true
