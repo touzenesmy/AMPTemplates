@@ -1,0 +1,33 @@
+App.AdminMethod=STDIO
+App.ApplicationPort1=7777
+App.ApplicationPort2=27015
+App.ApplicationPort3=8080
+App.ApplicationReadyMode=RegexMatch
+App.BaseDirectory=./motor-town/
+App.CommandLineArgs=run --name=motortown -p {{$ApplicationPort1}}:7777/tcp -p {{$ApplicationPort1}}:7777/udp -p {{$ApplicationPort2}}:27015/tcp -p {{$ApplicationPort2}}:27015/udp -p {{$ApplicationPort3}}:8080/tcp -e SERVER_HOSTNAME="{{SERVER_HOSTNAME}}" -e SERVER_PASSWORD="{{SERVER_PASSWORD}}" -e MAX_PLAYERS={{MAX_PLAYERS}} -e SERVER_MESSAGE="{{SERVER_MESSAGE}}" -e ENABLE_WEB_API=true -e WEB_API_PASSWORD="{{WEB_API_PASSWORD}}" -e WEB_API_PORT={{WEB_API_PORT}} coderocket/motortown
+App.CommandLineParameterDelimiter= 
+App.CommandLineParameterFormat=
+App.DisplayName=Motor Town
+App.ExecutableLinux=docker
+App.ExecutableWin=
+App.ExitMethod=SIGTERM
+App.HasReadableConsole=true
+App.HasWritableConsole=false
+App.RapidStartup=false
+App.RootDir=./motor-town/
+App.UpdateSource=None
+App.WorkingDir=
+Console.AppReadyRegex=^.*LogLoad: Took .+ seconds to LoadMap\.$
+Console.ThrowawayMessageRegex=^(WARNING|ERROR): Shader.+$
+Console.UserChatRegex=
+Console.UserJoinRegex=^.*LogNet: Join succeeded: (?<username>.+)$
+Console.UserLeaveRegex=^.*LogNet: UChannel::Close: Sending CloseBunch\. ChIndex == 0\. Name: \[UninitializedChannel\].*PlayerName: (?<username>.+)$
+Meta.Author=Samy
+Meta.ConfigManifest=motor-townconfig.json
+Meta.ConfigRoot=motor-town.kvp
+Meta.Description=Motor town dedicated server docker
+Meta.DisplayImageSource=steam:1369670
+Meta.DisplayName=Motor Town
+Meta.EndpointURIFormat=steam://connect/{ip}/{GenericModule.App.ApplicationPort1}
+Meta.OS=2
+Meta.URL=https://github.com/dominicrico/motortown
