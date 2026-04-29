@@ -7,6 +7,7 @@ Meta.ConfigRoot=motor-town.kvp
 Meta.Description=Motor town dedicated server docker
 Meta.DisplayName=Motor Town
 Meta.OS=2
+Meta.MinAMPVersion=2.4.0.0
 Meta.AppConfigId=a90ec83a-2d88-4ee1-a58d-00b76cace8fc
 App.AdminMethod=STDIO
 App.ApplicationPort1=7777
